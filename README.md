@@ -5,6 +5,7 @@ This project provides a setup using Docker Compose to create a service running T
 
 The project directory should look like this:
 
+```
 tor-lighttpd-onion/
 │
 ├── docker-compose.yml
@@ -14,6 +15,7 @@ tor-lighttpd-onion/
 │       └── hostname (automatically generated)
 └── html/
     └── index.html
+```
 
 
 ## 1. Create the `docker-compose.yml` File
@@ -82,7 +84,7 @@ Now you can start the service with:
 
 ```bash
 
-docker-compose up -d
+docker compose up -d
 ```
 
 On the first run, the Tor container will generate a new .onion address and save it in the hostname file. On subsequent runs, the same address will be reused.
