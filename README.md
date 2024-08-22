@@ -68,7 +68,7 @@ In this setup, the torrc file will be very very very simple. The main configurat
 
 
 ```bash
-# Torrc base config (other settings added by Docker Compose)
+# Torrc base config (other settings added by container)
 Log notice stdout
 ```
 
