@@ -5,7 +5,7 @@ This project provides a setup using Docker to create a service running `Tor` and
 
 The project directory should look like this:
 
-```
+```bash
 tor-lighttpd-onion/
 │
 ├── docker-compose.yml
