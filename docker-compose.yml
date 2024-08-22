@@ -1,0 +1,34 @@
+services:
+  tor:
+    image: alpine:latest
+    container_name: tor
+    command: >
+      sh -c "
+      apk add --no-cache tor && 
+      mkdir -p /var/lib/tor/hidden_service && 
+      chmod 700 /var/lib/tor/hidden_service && 
+      if [ ! -f /var/lib/tor/hidden_service/hostname ]; then
+        echo 'HiddenServiceDir /var/lib/tor/hidden_service' >> /etc/tor/torrc &&
+        echo 'HiddenServicePort 80 lighttpd:80' >> /etc/tor/torrc &&
+        tor --quiet;
+      else
+        tor --quiet;
+      fi"
+    volumes:
+      - ./tor/torrc:/etc/tor/torrc
+      - ./tor/hidden_service:/var/lib/tor/hidden_service
+    networks:
+      - tor-network
+
+  lighttpd:
+    image: lighttpd:alpine
+    container_name: lighttpd
+    volumes:
+      - ./html:/var/www/html    ports:
+      # - "80:80" # Expose the web server on port 80 # Additionally, the site is also published on the regular web.
+    networks:
+      - tor-network
+
+networks:
+  tor-network:
+    driver: bridge
