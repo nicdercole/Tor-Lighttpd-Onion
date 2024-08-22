@@ -99,8 +99,8 @@ After starting, you can view the .onion address in the `tor/hidden_service/hostn
 
 If you don't have Docker and Docker Compose installed, follow these links:
 
-   [Install Docker](https://docs.docker.com/engine/install/)
-   [Install Docker Compose](https://docs.docker.com/compose/install/)
+[Install Docker](https://docs.docker.com/engine/install/)
+[Install Docker Compose](https://docs.docker.com/compose/install/)
 
 Troubleshooting
 
