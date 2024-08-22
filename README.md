@@ -59,7 +59,8 @@ services:
 
 networks:
   tor-network:
-    driver: bridge```
+    driver: bridge
+```
 
 2. Configure the torrc File
 
