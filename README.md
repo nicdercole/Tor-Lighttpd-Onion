@@ -97,12 +97,12 @@ On the first run, the Tor container will generate a new .onion address and save 
 After starting, you can view the .onion address in the `tor/hidden_service/hostname` file. This is the address you will use to access your site via the Tor browser.
 
 
-If you don't have Docker and Docker Compose installed, follow these links:
+## If you don't have Docker and Docker Compose installed, follow these links:
 
 [Install Docker](https://docs.docker.com/engine/install/)
+
 [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-Troubleshooting
+## Troubleshooting
 
-    Ensure your Docker and Docker Compose versions are up to date.
-    If the .onion address is not persistent, check the hidden_service directory permissions and ensure it's correctly mapped in the Docker Compose file.
+Ensure your Docker and Docker Compose versions are up to date. If the .onion address is not persistent, check the hidden_service directory permissions and ensure it's correctly mapped in the Docker Compose file.
