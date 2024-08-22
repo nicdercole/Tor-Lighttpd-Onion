@@ -9,11 +9,12 @@ tor-lighttpd-onion/
 │
 ├── docker-compose.yml
 ├── tor/
-│ ├── torrc
-│ └── hidden_service/
-│ └── hostname (automatically generated)
+│   ├── torrc
+│   └── hidden_service/
+│       └── hostname (automatically generated)
 └── html/
-└── index.html
+    └── index.html
+
 
 yaml
 
