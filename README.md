@@ -84,12 +84,14 @@ The html directory will contain the website you want to serve. Simply add an ind
 
 Now you can start the service with:
 
-bash
+```bash
 
 docker-compose up -d
+```
 
 On the first run, the Tor container will generate a new .onion address and save it in the hostname file. On subsequent runs, the same address will be reused.
-6. Access the .onion Address
+
+## 6. Access the .onion Address
 
 After starting, you can view the .onion address in the tor/hidden_service/hostname file. This is the address you will use to access your site via the Tor browser.
 Additional Steps: Adding Hugo for Static Site Generation
