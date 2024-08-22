@@ -52,8 +52,10 @@ services:
     image: lighttpd:alpine
     container_name: lighttpd
     volumes:
-      - ./html:/var/www/html    ports:
-      # - "80:80" # Expose the web server on port 80 # Additionally, the site is also published on the regular web.
+      - ./html:/var/www/html
+    ports:
+      # - "80:80" # Expose the web server on port 80 to make the site accessible on the regular web.
+      # - "443:443" # Expose the web server on port 443 to make the site accessible on the regular web.
     networks:
       - tor-network
 
