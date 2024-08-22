@@ -15,6 +15,9 @@ tor-lighttpd-onion/
 │       └── hostname (automatically generated)
 └── html/
     └── index.html
+    └── page2.html
+    └── page3.html
+    └── eccecc.html
 ```
 
 
@@ -96,8 +99,8 @@ After starting, you can view the .onion address in the `tor/hidden_service/hostn
 
 If you don't have Docker and Docker Compose installed, follow these links:
 
-    Install Docker
-    Install Docker Compose
+    [Install Docker](https://docs.docker.com/engine/install/)
+    [Install Docker Compose](https://docs.docker.com/compose/install/)
 
 Troubleshooting
 
